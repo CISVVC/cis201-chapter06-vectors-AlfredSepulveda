@@ -46,11 +46,13 @@ int main()
       }
    for(int i = 0;i<description.size(); i++)
       {
-         //display the contents of the data.
+   //display the contents of the data and adding the interest.
+         double interest = 0.5;
          std::cout << "day: " << day[i]
          << " amount: " << amount[i]
+         << " interest acquired: " << amount[i] * interest / 100
          << " description: " << description[i] << std::endl;
-      }
+         }
       return 0;
 }
 
